@@ -3,7 +3,7 @@ const db = require("./db");
 const readPixelHandler = require("./handlers/readPixels");
 const writePixelHandler = require("./handlers/writePixels");
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 app.use(express.json());
